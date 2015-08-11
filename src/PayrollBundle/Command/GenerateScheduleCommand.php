@@ -40,7 +40,7 @@ class GenerateScheduleCommand extends Command
 
         $csvData = array('headers' => array('month name', 'payment date', 'bonus date'), 'data' => array());
 
-        for($i=0; $i< 3; $i++) {
+        for($i=0; $i< count($paymentDates); $i++) {
             $csvData['data'][] = array(
                 'monthName' => $paymentDates[$i]->format('F'),
                 'paymentDate' => $paymentDates[$i]->format('d-m-Y'),
