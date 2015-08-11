@@ -1,0 +1,15 @@
+{
+    "name": "mati/sallary_app",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/",
+            "SymfonyStandard\\": "app/SymfonyStandard/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/console": "dev-master"
+    }
+}
